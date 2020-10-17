@@ -31,7 +31,7 @@
         color: #13070C;
       }
 
-      .daily_button{
+      #random_button{
         background-color: #EDF060;
         color: #13070C;
         width: 20%;
@@ -39,6 +39,14 @@
         margin-top: 10px;
         display: inline-block;
         margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      #random_joke_wrapper{
+        font-size: 4.5em;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 25px;
       }
 
     </style>
@@ -64,18 +72,19 @@
     <div class="page_wrapper">
         <h1>Click the button below for a random joke</h1>
         <h2>Each time you click the button, a new joke will be displayed</h2>
-        <a href="randomjoke.html">
-          <div class="daily_button">
+        <!-- <a href="randomjoke.html"> -->
+          <div id="random_button">
                 Random Joke
           </div>
-        </a>
-        <div class="daily_joke_wrapper">
-            //this is where the random joke will be displayed
+        <!-- </a> -->
+        <div id="random_joke_wrapper">
+            <!-- this is where the random joke will be displayed -->
         </div>
     </div>
 
   </br>
   </br>
+    <script text="type/javascript" src="../script.js"></script>
   </body>
   <footer class="site_footer">
     <div class="footer_wrapper">
