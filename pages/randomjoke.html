@@ -4,7 +4,7 @@
   <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css"/>
-    <title>Puns</title>
+    <title>Creative Proj 1 Home</title>
     <style media="screen">
       .header_wrapper {
         box-sizing: border-box;
@@ -20,47 +20,27 @@
       body{
         background-color: #DBCBD8;
       }
-      .page_wrapper{
-        padding: 50px; 50px; 50px; 50px;
-      }
       .bg-light, .navbar * {
         background-color: #225560!important;
         color: #EDF060!important;
       }
-
-      @media only screen and (min-width: 1024px) {
-        .masonry {
-          column-count: 4;
-        }
-      }
-      /* Masonry on medium-sized screens */
-      @media only screen and (max-width: 1023px) and (min-width: 768px) {
-        .masonry {
-          column-count: 3;
-        }
-      }
-      /* Masonry on small screens */
-      @media only screen and (max-width: 767px) and (min-width: 540px) {
-        .masonry {
-          column-count: 2;
-        }
-      }
-      .item {
-        background-color: #FFFFFF;
-        border: 20px;
-        border-style: solid;
-        width: 300px;
-        height: 300px;
+      .page_wrapper{
+        padding-top: 50px;
         text-align: center;
-        color: #13070C;
         font-family: Impact, fantasy;
-        vertical-align: middle;
-        border-color: #13070C;
-        margin-bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        color: #13070C;
       }
+
+      .daily_button{
+        background-color: #EDF060;
+        color: #13070C;
+        width: 20%;
+        padding: 3%;
+        margin-top: 10px;
+        display: inline-block;
+        margin-bottom: 20px;
+      }
+
     </style>
   </head>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -68,7 +48,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <header>
     <div class=" header_wrapper">
-    <h1 class="page_title">Puns</h1>
+    <h1 class="page_title">RandomJoke</h1>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="navbar-nav">
@@ -82,39 +62,24 @@
   </header>
   <body>
     <div class="page_wrapper">
-      <div class="masonry">
-          <div class="item">
-            Have you heard the rumor about butter? <br> Never mind, I wont spread it.
+        <h1>Click the button below for a random joke</h1>
+        <h2>Each time you click the button, a new joke will be displayed</h2>
+        <a href="randomjoke.html">
+          <div class="daily_button">
+                Random Joke
           </div>
-          <div class="item">
-            What did the buffalo say to his kid as he left for work? <br> Bison.
-          </div>
-          <div class="item">
-            What is a pigs favorite karate move? <br> A pork chop!
-          </div>
-          <div class="item">
-            Why did the cow milking stool only have three legs? <br> 'cause the cow got the udder.
-          </div>
-          <div class="item">
-            What did the magician say to the fisherman? <br> Pick a cod, any cod!
-          </div>
-          <div class="item">
-            My wife was mad that I have no sense of direction. <br> So I packed up my things and right.
-          </div>
-          <div class="item">
-            I bought a useles thesaurus. <br> Not only is it terrible, but it's terrible.
-          </div>
-          <div class="item">
-            Want to hear a joke about construction? <br> I'm still working on it...
-          </div>
-      </div>
+        </a>
+        <div class="daily_joke_wrapper">
+            //this is where the random joke will be displayed
+        </div>
     </div>
+
+  </br>
+  </br>
   </body>
   <footer class="site_footer">
     <div class="footer_wrapper">
       Github Repository <a style="color: #225560;" target="_blank" href="https://github.com/storgers998/creativeProj2.git"> storgers998 </a>
-      <br>
-      Puns courtesy of <a href="https://enrollment.byu.edu/admissions/dad-jokes-3" style="color:#13070C;"> enrollment.byu.edu </a>
     </div>
   </footer>
 </html>
